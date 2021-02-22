@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="title icon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" 
+    crossorigin="anonymous">
+    <title>QCalculator</title>
+
+</head>
+<body>
+
+    
+    <h1 class="heading1">QCalculator</h1>
+
+    <br>
+
+    <div style="background-color: crimson; padding: 16px">
+        <label for="education" style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">Education: </label>
+    <select name="education" id="education">
+        <option value="1"></option>
+        <option value="1.5" id="undergraduate">Undergraduate degree (coefficient 1.5)</option>
+        <option value="1.2" id="college">College degree (coefficient 1.2)</option>
+        <option value="1.05"id="high">High school degree (coefficient 1.05)</option>
+        <option value="0.9" id="mid">Middle school degree (coefficient 0.9)</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="fnw" style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">Family net worth: </label>
+    <select name="fnw" id="fnw">
+    <option value="1">...</option>
+    <option value="2" id="rich">More than $100,000 (coefficient 2)</option>
+    <option value="1.5" id="middle">Between $50,000 and $100,000 (coefficient 1.5)</option>
+    <option value="1.2" id="poor">Less than $50,000 (coefficient 1.2)</option>
+    </select>
+
+    <br>
+    <br>
+
+    <p
+    style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">
+    Skills: 
+</p>
+        <form name = "skills" style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">
+            <input name = "option" type = "checkbox"  value = 100> Playing on dombra (+100$) <br>
+            <input name = "option" type = "checkbox"  value = 200> Good cook (+200$) <br>
+            <input name = "option" type = "checkbox"  value = 150> Easygoing character (+150$) <br>
+            <input name = "option" type = "checkbox"  value = 100> Sings well (+100$)  <br>
+        </form> 
+    
+
+    <br>
+    <br>
+
+    <p
+    style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">
+    Age: 
+    </p>
+    <form name = "age" style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">
+        <input name = "option" type = "radio" value = 1.5> 18-23 (coefficient 1.5)<br>
+        <input name = "option" type = "radio" value = 1.2>  24-27 (coefficient 1.2)<br>
+        <input name = "option" type = "radio" value = 0.95> 28+ (coefficient 0.95)<br>
+    </form>
+
+    <br>
+
+      <p
+      style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">
+      Reputation: </p>
+
+      <form name = "reputation" style="font-family: Arial, Helvetica, sans-serif; color: white; font-weight:600;">
+        <input name = "option" type = "checkbox" value = 0.85> Gossips about parent's attitude (coefficient 0.85) <br>
+        <input name = "option" type = "checkbox" value = 0.9> Gossips about character (coefficient 0.9)  <br> 
+        <input name = "option" type = "checkbox" value = 200> General gossips around person (coefficient -200$) <br> 
+    </form>
+     
+      <p><button onclick = "calculate()">Calculate</button></p>
+ </div>
+    <script src="script.js"></script>
+</body>
+</html>
